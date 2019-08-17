@@ -13,7 +13,15 @@ ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [PK__Abode__2E2462D848C294C4] PRIM
 GO
 ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__Address_i__5AEE82B9] FOREIGN KEY ([Address_id]) REFERENCES [Customer].[Address] ([AddressID])
 GO
+ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__Address_i__6B24EA82] FOREIGN KEY ([Address_id]) REFERENCES [Customer].[Address] ([AddressID])
+GO
 ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__TypeOfAdd__5BE2A6F2] FOREIGN KEY ([TypeOfAddress]) REFERENCES [Customer].[AddressType] ([TypeOfAddress])
 GO
+ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__TypeOfAdd__6D0D32F4] FOREIGN KEY ([TypeOfAddress]) REFERENCES [Customer].[AddressType] ([TypeOfAddress])
+GO
 ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__Person_id__59FA5E80] FOREIGN KEY ([Person_id]) REFERENCES [Customer].[Person] ([person_ID])
+GO
+ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__Person_id__6C190EBB] FOREIGN KEY ([Person_id]) REFERENCES [Customer].[Person] ([person_ID])
+GO
+ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [FK__Abode__Person_id__6FE99F9F] FOREIGN KEY ([Person_id]) REFERENCES [Customer].[Person] ([person_ID])
 GO
