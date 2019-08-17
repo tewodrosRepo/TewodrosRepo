@@ -6,7 +6,7 @@ GO
 
 CREATE VIEW [dbo].[getallAdobe]
 AS
-SELECT [Abode_ID]
+SELECT top 10 [Abode_ID]
       ,[Person_id]
       ,[Address_id]
       ,[TypeOfAddress]
