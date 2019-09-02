@@ -57,9 +57,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Snapshots" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Customer.sql" />
     <Build Include="foo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Snapshots\CarRental_20190817_23-55-18.dacpac" />
+    <None Include="CarRental.publish.xml" />
   </ItemGroup>
 </Project>
